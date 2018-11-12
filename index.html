@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="jjscript.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+    
+<body>
+    
+    <h1 id="title">
+        Team Splitter
+    </h1>
+    
+    <p>Please select the number of total members</p>
+    <div class="memberRow">
+        <span onclick="selectMember(this)" id="3">3</span>
+        <span onclick="selectMember(this)" id="4">4</span>
+        <span onclick="selectMember(this)" id="5">5</span>
+        <span onclick="selectMember(this)" id="6">6</span>
+        <span onclick="selectMember(this)" id="7">7</span>
+        <span onclick="selectMember(this)" id="8">8</span>
+        <span onclick="selectMember(this)" id="9">9</span>
+        <span onclick="selectMember(this)" id="10">10</span>
+        <span onclick="selectMember(this)" id="11">11</span>
+        <span onclick="selectMember(this)" id="12">12</span>
+        <span onclick="selectMember(this)" id="15">15</span>
+    </div>
+    
+    <p>Please select how many teams would you like</p>
+    <div class="selectorRow">
+        <span onclick="selectTeam(this)" id="2t">2</span>
+        <span onclick="selectTeam(this)" id="3t">3</span>
+        <span onclick="selectTeam(this)" id="4t">4</span>
+        <span onclick="selectTeam(this)" id="5t">5</span>
+    </div>
+    
+    <div>
+        <button onclick="calculateCheck(numOfMember,numOfTeam)">Calculate</button>
+    </div>
+    <p id="error"> </p>
+    
+    <ul id="result">
+    </ul>
+    
+</body>
+</html>
